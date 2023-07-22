@@ -48,7 +48,7 @@ public class Main {
                 scanner.close();
                 System.exit(0);
             default:
-                System.out.println("Invalid choice. Try again.");
+                System.out.println("Invalid choice. Try again!.");
 
         }
 
