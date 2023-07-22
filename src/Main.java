@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Main {
@@ -19,21 +20,21 @@ public class Main {
                     addBooks();
                     break;
                 case 2:
-                    //borrowBook(scanner);
+                    //updatingbook();
                     break;
                 case 3:
                     Removebook();
                     break;
                 case 4:
-                    //bookAdd(scanner);
+                    //bookAdd();
                     break;
 
                 case 5:
-                    //lendingbook();
+                    lendingbook();
                     break;
 
                 case 6:
-                    //bookAdd(scanner);
+                    //bookAdd(s);
                     break;
                 case 7:
                     System.out.println("Exiting Library Management System.");
@@ -53,7 +54,7 @@ public class Main {
         System.out.println("2.Update an existing book.");
         System.out.println("3.Remove an existing book.");
         System.out.println("4.Lend a book.");
-        System.out.println("5.eturn a book.");
+        System.out.println("5.return a book.");
         System.out.println("6.List all avaliable book.");
         System.out.println("7.Exit");
     }
@@ -97,7 +98,13 @@ public class Main {
         objDBO.lend(x);
     }
 
+    public static void updatingbook(){
+        System.out.println("Lending a book.");
+        System.out.println("REnter isbn number.");
+        int x =sc.nextInt();
+        objDBO.lend(x);
+    }
 
 
-}
+
 }
