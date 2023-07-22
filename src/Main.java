@@ -20,23 +20,22 @@ public class Main {
                     addBooks();
                     break;
                 case 2:
-                    //updatingbook();
+                    updatingbook();
                     break;
                 case 3:
                     Removebook();
                     break;
                 case 4:
-                    //bookAdd();
+                    lendingbook();
                     break;
 
                 case 5:
-                    lendingbook();
+                    //lendingbook();
                     break;
 
                 case 6:
 
-
-                    //AvailableBooks();
+                    objDBO.displayAvailableBooks();
                     break;
                 case 7:
                     System.out.println("Exiting Library Management System.");
@@ -106,12 +105,14 @@ public class Main {
         int x =sc.nextInt();
         objDBO.lend(x);
     }
-    public static void availblebook(){
-        
 
-    }
+public static void returnbook(){
 
+    System.out.println("Enter isbn number : ");
+    int x = sc.nextInt();
 
+    //objDBO.displayAvailableBooks();
+}
 
 
 
