@@ -81,7 +81,7 @@ public class Main {
 
     public static void Removebook(){
         System.out.println("Remove and existing book.");
-        System.out.println("REnter isbn number.");
+        System.out.println("Enter isbn number.");
         int x =sc.nextInt();
         System.out.println("\nAre you sure remove this book(y/n): ");
         String confirm = sc.next();
@@ -94,7 +94,7 @@ public class Main {
 
     public static void lendingbook(){
         System.out.println("Lending a book.");
-        System.out.println("REnter isbn number.");
+        System.out.println("Enter isbn number.");
         int x =sc.nextInt();
         objDBO.lend(x);
     }

@@ -46,11 +46,12 @@ public class DBoperation {
 
     public void lend(int isbn){
         try{
-            String updateQuery = "UPDATE books SET title = ? WHERE isbn = ?";
+            String updateQuery = "DELETE FROM books WHERE isbn = ?";
 
             PreparedStatement statement=mycon.getMyConnection().prepareStatement(updateQuery);
             String newCellValue = "Lended book";
-            statement.setString(1, newCellValue);
+            statement.setInt(1,isbn);
+
             int rowsUpdate = statement.executeUpdate();
             if(rowsUpdate>0){
                 System.out.println("The book is lended!");
